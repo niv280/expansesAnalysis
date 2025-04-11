@@ -1,0 +1,55 @@
+{
+    "options": {
+        "startDate": "2025-2-6",
+        "combineInstallments": true,
+        "showBrowser": true,
+        "executablePath2": "/home/nive/finance/transactions/node_modules/download-chromium/.local-chromium/chromium-linux-843427/chrome-linux/chrome",
+        "executablePath": "/home/nive/.cache/puppeteer/chrome/linux-126.0.6478.126/chrome-linux64/chrome",
+        "verbose": true,
+        "defaultTimeout": 90000000
+    },
+    "_comment": [
+        {
+            "companyId": "visaCal",
+            "username": "nivedels",
+            "password": "Edel1993"
+        },
+        {
+            "companyId": "beinleumi",
+            "username": "I00SEJ6",
+            "password": "Edel1997"
+        },
+        {
+            "companyId": "visaCal",
+            "username": "shanilll",
+            "password": "Edel1993"
+        },
+        {
+            "companyId": "max",
+            "username": "nivedels",
+            "password": "Edel1993"
+        }
+    ],
+    "credentials": [
+        {
+            "companyId": "beinleumi",
+            "username": "I00SEJ6",
+            "password": "Edel1997"
+        },
+        {
+            "companyId": "visaCal",
+            "username": "nivedels",
+            "password": "Edel1993"
+        },
+        {
+            "companyId": "visaCal",
+            "username": "shanilll",
+            "password": "Edel1993"
+        },
+        {
+            "companyId": "max",
+            "username": "nivedels",
+            "password": "Edel1993"
+        }
+    ]
+}

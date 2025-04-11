@@ -1,0 +1,19 @@
+{
+    "options" : {
+      "startDate": "2020-05-01",
+      "combineInstallments": false,
+      "showBrowser":true,
+      "executablePath" : "/home/nive/finance/transactions/node_modules/download-chromium/.local-chromium/chromium-linux-843427/chrome-linux/chrome"
+    },
+    "credentials" : {
+    	"beinleumi" : {
+    	  "username": "I00SEJ6",
+    	  "password": "Edel1992"
+    	},
+	"visaCal" : {
+	  "username" : "nivedels",
+	  "password" : "Edel1991"
+	}
+ 
+    }
+}

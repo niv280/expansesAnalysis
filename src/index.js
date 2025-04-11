@@ -1,29 +1,11 @@
-import yargs from 'yargs';
-import colors from 'colors/safe';
-import setupMainMenu from './setup/setup-main-menu';
-import scrapingMainMenu from './scrape/scraping-main-menu';
+import {scrapeMaster} from "./scrape/scrapeWrapper.js"
+import { readFile } from 'fs/promises';
 
-// set theme
-colors.setTheme({
-  title: 'bgCyan',
-  notify: 'magenta',
-});
-
-const args = yargs.options({
-  mode: {
-    alias: 'm',
-    describe: 'mode for running',
-  },
-  show: {
-    alias: 's',
-    describe: 'show browser while scraping',
-    type: 'boolean',
-    default: false,
-  },
-}).help().argv;
-
-if (!args.mode || args.mode === 'scrape') {
-  scrapingMainMenu(args.show);
-} else if (args.mode === 'setup') {
-  setupMainMenu();
+let config_file = './.config.json'
+if ( process.argv.length > 2) {
+    config_file = process.argv[2]
 }
+
+let config = JSON.parse(await readFile(config_file, "utf8"));
+
+scrapeMaster(config)

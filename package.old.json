@@ -1,0 +1,50 @@
+{
+  "name": "Extract transactions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src",
+    "start": "babel-node --inspect src ",
+    "start:debug": "npm start -- -s true "
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eshaham/israeli-ynab-updater.git"
+  },
+  "author": "Elad Shaham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eshaham/israeli-ynab-updater/issues"
+  },
+  "homepage": "https://github.com/eshaham/israeli-ynab-updater#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+    "babel-plugin-transform-es2015-block-scoping": "^6.26.0",
+    "babel-plugin-transform-es2015-shorthand-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "download-chromium": "3.0.0",
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "pre-commit": "^1.2.2"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "colors": "^1.4.0",
+    "inquirer": "^7.3.3",
+    "israeli-bank-scrapers": "^4.0.2",
+    "israeli-bank-scrapers-core": "^4.0.2",
+    "json2csv": "^5.0.5",
+    "jsonfile": "^6.1.0",
+    "moment": "^2.29.1",
+    "puppeteer": "^23.9.0",
+    "yargs": "^16.1.1"
+  }
+}
