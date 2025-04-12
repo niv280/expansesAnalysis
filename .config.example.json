@@ -1,0 +1,22 @@
+{
+    "options": {
+        "startDate": "2023-12-28",
+        "combineInstallments": true,
+        "showBrowser": true,
+        "executablePath": "<path to chrom>",
+        "verbose": true,
+        "defaultTimeout": 900
+    },
+    "credentials": [
+        {
+            "companyId": "<bank/credit_card company>",
+            "username": "<username>",
+            "password": "<password>"
+        },
+        {
+            "companyId": "<bank/credit_card company 2>",
+            "username": "<username>",
+            "password": "<password>"
+        }
+    ]
+}

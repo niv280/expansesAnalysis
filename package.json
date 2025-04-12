@@ -1,7 +1,28 @@
 {
-  "type" : "module",
+  "type": "module",
   "dependencies": {
     "israeli-bank-scrapers": "^5.4.6",
     "puppeteer": "^24.6.0"
-  }
+  },
+  "name": "transactions",
+  "description": "A tool for updating YNAB using for the Israeli market. This tool uses [Israeli Banks Scrapers](https://github.com/eshaham/israeli-bank-scrapers) project as the source of fetching account data.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eshaham/israeli-ynab-updater.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eshaham/israeli-ynab-updater/issues"
+  },
+  "homepage": "https://github.com/eshaham/israeli-ynab-updater#readme"
 }

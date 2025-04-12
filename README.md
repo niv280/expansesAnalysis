@@ -1,50 +1,49 @@
-# Israeli YNAB Updater
-A tool for updating YNAB using for the Israeli market. This tool uses [Israeli Banks Scrapers](https://github.com/eshaham/israeli-bank-scrapers) project as the source of fetching account data.
+# Transactions Analysis
 
-## Getting started
+A tool for analyzing bank transactions and credit card expenses. This tool provides a visual dashboard to track and analyze your spending patterns.
 
-### Prerequisites 
+## Features
 
-In order to start using this tool, you will need to have Node.js (>= 10) installed on your machine.  
-Go [here!](https://nodejs.org/en/download/) to download and install the latest Node.js for your operating system.
+- Interactive dashboard built with Dash and Plotly
+- Transaction categorization and filtering
+- Monthly and yearly spending breakdowns 
+- Income vs expense analysis
+- Dark/light theme support
+- Ability to add manual transactions
+- Ignore specific transactions/categories
+- Export data to CSV
+
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.7+
+- pip package manager
 
 ### Installation
-Once Node.js is installed, run the following command to fetch the code:
+
+1. Clone the repository:
 
 ```bash
-git clone https://github.com/eshaham/israeli-ynab-updater
-cd israeli-ynab-updater
+git clone https://github.com/niv280/expansesAnalysis
+cd expansesAnalysis
 ```
 
-If you're using `nvm` make sure to run `nvm use` inside project folder for best compatability.  
-If you're using `nodenv`, it should automatically pick up the correct node version.
-
-Next you will need to install dependencies by running
-```bash
-npm install
-```
-
-### Saving credentials
-The credentials for each scraper are encrypted and saved in an dedicated file on your system.  
-To save credentials for a specific scraper, run the following command and choose the scraper:
+2. Install dependencies:
 
 ```bash
-npm run setup
+pip install -r requirements.txt
 ```
 
-When asked 'What would you like to setup?' choose 'Scrapers'.
+3. Edit the `config.json` file to include your account data.
 
-### Scraping
-Once you save the credentials for relevant scrapers, run the following command to start scraping:
+4. Run the dashboard:
 
 ```bash
-npm start
+python3 src/analysis/analysisTransactions.py
 ```
 
-The CSV file should be created under `Transactions` folder in your Downloads folder, unless you choose a different folder.
+5. Open the dashboard in your browser
 
-You can also scrape in debug mode by running:
-
-```bash
-npm run start:debug
-```
+6. Press the 'Fetch Data' button to fetch your transactions

@@ -395,7 +395,7 @@ class App():
                 if clickData and "points" in clickData.keys() and 'label' in clickData['points'][0].keys():
                     label = clickData['points'][0]['label']
 
-                    if "custum_data" in clickData['points'][0]: 
+                    if "customdata" in clickData['points'][0].keys(): 
                         custum_data = clickData['points'][0]['customdata']
                         if custum_data in self.categories['description'].values():
                             month = label
@@ -405,7 +405,6 @@ class App():
                         regex_month = "" if month == "All" else str(month).zfill(2)
                         month = 12 if month == "All" else month
                         df = list(self.trans.trans.values())[0].df
-                        print(df.date.str.contains(f'{year}-{regex_month}'),regex_month)
                         df = df[df.date.str.contains(f'{year}-{regex_month}',regex=True)]
                         df['category'] = df['description'].replace(self.categories['description'])
                         df.loc[~df['originalCurrency'].str.contains("ILS|₪"),'category'] = 'Vacation'
